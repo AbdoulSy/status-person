@@ -1,0 +1,23 @@
+{
+  "name": "status-person",
+  "version": "1.0.0",
+  "description": "A Person Component for status",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdoulSy/status-person.git"
+  },
+  "keywords": [
+    "Status",
+    "Person"
+  ],
+  "author": "Abdoul Sy <message@abdoulsy.eu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdoulSy/status-person/issues"
+  },
+  "homepage": "https://github.com/AbdoulSy/status-person#readme"
+}
