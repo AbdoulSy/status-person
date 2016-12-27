@@ -23,7 +23,12 @@
   float: right;
 }
 
-.Person-postalAddress {
+.Person-telephone {
+  margin: 0;
+  padding: 0;
+}
+
+.longTermStatus {
   padding: 20px;
   line-height: 15px;
   background-color: #EEE;

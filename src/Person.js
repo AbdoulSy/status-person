@@ -33,19 +33,26 @@ class Person extends Component {
             </div>
           </header>
         </div>
-        <p itemProp="telephone">(+44) 07 810 763 236</p>
-        <p itemProp="url">
-          <a href="http://web.abdoulsy.eu">
-           http://web.abdoulsy.eu
-          </a>
-        </p>
-        <div className="Person-postalAddress" itemScope itemType="http://schema.org/PostalAddress">
-          <p itemProp="streetAddress">7 Burgess Park Mansions,
-          <br/> Fortune Green Road. </p>
-          <span itemProp="addressRegion">Camden</span>,
-          <span itemProp="postalCode">NW61DP</span>,
-          <span itemProp="addressLocality">London</span>
+
+        <div className="Person-affiliation">
+        <span>Affiliation:</span> <span itemProp="affiliation">Senforsce</span>
         </div>
+
+        <footer className="longTermStatus">
+          <p className="Person-telephone" itemProp="telephone">(+44) 07 810 763 236</p>
+          <p itemProp="url">
+            <a href="http://web.abdoulsy.eu">
+             http://web.abdoulsy.eu
+            </a>
+          </p>
+          <div className="Person-postalAddress" itemScope itemType="http://schema.org/PostalAddress">
+            <p itemProp="streetAddress">7 Burgess Park Mansions,
+            <br/> Fortune Green Road. </p>
+            <span itemProp="addressRegion">Camden</span>,
+            <span itemProp="postalCode">NW61DP</span>,
+            <span itemProp="addressLocality">London</span>
+          </div>
+        </footer>
       </div>
     );
   }
