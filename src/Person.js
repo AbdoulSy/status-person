@@ -19,18 +19,26 @@ class Person extends Component {
             </div>
           </div>
         </header>
+        <div className="currentStatus">
+          <header>
+            <p>current status message:</p>
+            <div className="statusMessage">
+              <p>Sitting at Costa's, coding a Person's Current Status message
+              This is pertty Meta right now.
+              </p>
+              <small>at:
+                <span>Costa's Clapham South</span>
+                <span> Tue 27/12 14:38 </span>
+                </small>
+            </div>
+          </header>
+        </div>
         <p itemProp="telephone">(+44) 07 810 763 236</p>
         <p itemProp="url">
           <a href="http://web.abdoulsy.eu">
            http://web.abdoulsy.eu
           </a>
         </p>
-        <div itemProp="colleague">
-          <p>Colleague </p>
-          <div className="colleagueList">
-            <p itemScope itemType="Person">Ousmane Ndiaye</p>
-          </div>
-        </div>
         <div className="Person-postalAddress" itemScope itemType="http://schema.org/PostalAddress">
           <p itemProp="streetAddress">7 Burgess Park Mansions,
           <br/> Fortune Green Road. </p>
