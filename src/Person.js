@@ -3,19 +3,73 @@ import avatar from '../public/images/abdoulsy.jpg';
 import './Person.css';
 
 class Person extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      person: {
+        basic: {},
+        avatar: {},
+        currentStatus: {},
+        longTermStatus: {},
+        postalAddress: {}
+      }
+    };
+  }
+
+  componentDidMount () {
+    this.setState({
+      person: {
+        type: "http://schema.org/Person",
+        basic: {
+          name: "Abdoul Sy",
+          jobTitle: "Developer",
+          email: "message@abdoulsy.eu"
+        },
+        avatar: {
+          image: avatar
+        },
+        currentStatus: {
+          statusMessage: `Sitting at Costa's, coding a Person's Current Status message
+              This is pertty Meta right now.`,
+          statusLocation: "Costa's Clapham South",
+          statusDate: "Tue 27/12 14:38 ",
+        },
+        affiliation: "Senforsce",
+        longTermStatus: {
+          telephone: "(+44) 07 810 763 236",
+          url: "http://web.abdoulsy.eu"
+        },
+        postalAddress: {
+          type: "http://schema.org/PostalAddress",
+          streetAddress: `7 Burgess Park Mansions,
+             Fortune Green Road. `,
+          postalCode: "NW61DP",
+          addressRegion: "Camden",
+          addressLocality: "London"
+        }
+      }
+    });
+  }
+
   render() {
+    let person = this.state.person;
+    let basic = person.basic;
+    let a = person.avatar;
+    let currentStatus = person.currentStatus;
+    let longTermStatus = person.longTermStatus;
+    let postalAddress = person.postalAddress;
     return (
-      <div className="Person" itemScope itemType="http://schema.org/Person">
+      <div className="Person" itemScope itemType={person.type}>
         <header className="Person-header">
           <div className="Person-basic">
-            <h1 itemProp="name">Abdoul Sy</h1>
-            <h3 itemProp="jobTitle">Developer</h3>
-            <h5 itemProp="email">message@abdoulsy.eu</h5>
+            <h1 itemProp="name">{basic.name}</h1>
+            <h3 itemProp="jobTitle">{basic.jobTitle}</h3>
+            <h5 itemProp="email">{basic.email}</h5>
           </div>
           <div className="Person-avatar">
             <div itemProp="image" className="PersonImage">
-              <img src={avatar} role="presentation"
-                alt="Abdoul Sy"/>
+              <img src={a.image} role="presentation"
+                alt="{basic.name}"/>
             </div>
           </div>
         </header>
@@ -23,34 +77,31 @@ class Person extends Component {
           <header>
             <p>current status message:</p>
             <div className="statusMessage">
-              <p>Sitting at Costa's, coding a Person's Current Status message
-              This is pertty Meta right now.
-              </p>
+              <p>{currentStatus.statusMessage}</p>
               <small>at:
-                <span>Costa's Clapham South</span>
-                <span> Tue 27/12 14:38 </span>
+                <span>{currentStatus.statusLocation}</span>
+                <span>{currentStatus.statusDate}</span>
                 </small>
             </div>
           </header>
         </div>
 
         <div className="Person-affiliation">
-        <span>Affiliation:</span> <span itemProp="affiliation">Senforsce</span>
+        <span>Affiliation:</span> <span itemProp="affiliation">{person.affiliation}</span>
         </div>
 
         <footer className="longTermStatus">
-          <p className="Person-telephone" itemProp="telephone">(+44) 07 810 763 236</p>
+          <p className="Person-telephone" itemProp="telephone">{longTermStatus.telephone}</p>
           <p itemProp="url">
-            <a href="http://web.abdoulsy.eu">
-             http://web.abdoulsy.eu
+            <a href="{longTermStatus.url}">
+             {longTermStatus.url}
             </a>
           </p>
-          <div className="Person-postalAddress" itemScope itemType="http://schema.org/PostalAddress">
-            <p itemProp="streetAddress">7 Burgess Park Mansions,
-            <br/> Fortune Green Road. </p>
-            <span itemProp="addressRegion">Camden</span>,
-            <span itemProp="postalCode">NW61DP</span>,
-            <span itemProp="addressLocality">London</span>
+          <div className="Person-postalAddress" itemScope itemType="{postalAddress.type}">
+            <p itemProp="streetAddress">{postalAddress.streetAddress}</p>
+            <span itemProp="addressRegion">{postalAddress.addressRegion}</span>,
+            <span itemProp="postalCode">{postalAddress.postalCode}</span>,
+            <span itemProp="addressLocality">{postalAddress.addressLocality}</span>
           </div>
         </footer>
       </div>
