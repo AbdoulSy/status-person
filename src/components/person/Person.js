@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import avatar from './data/images/abdoulsy.jpg';
-import PersonHeader from './personHeader/person-header.js';
+import PersonHeader from './personHeader/person-header';
+import PersonFooter from './personFooter/person-footer'
 import './Person.css';
 
 class Person extends Component {
@@ -30,10 +31,10 @@ class Person extends Component {
           image: avatar
         },
         currentStatus: {
-          statusMessage: `Sitting at Costa's, coding a Person's Current Status message
-              This is pertty Meta right now.`,
-          statusLocation: "Costa's Clapham South",
-          statusDate: "Tue 27/12 14:38 ",
+          statusMessage: `Lying down, refactoring \n
+          the component Person, updating the status message`,
+          statusLocation: "Lee @Malika's AirBnb",
+          statusDate: "Thu 29/12 15:43 ",
         },
         affiliation: "Senforsce",
         longTermStatus: {
@@ -54,45 +55,26 @@ class Person extends Component {
 
   render() {
     let person = this.state.person;
-    let basic = person.basic;
-    let a = person.avatar;
     let currentStatus = person.currentStatus;
-    let longTermStatus = person.longTermStatus;
-    let postalAddress = person.postalAddress;
     return (
       <div className="Person" itemScope itemType={person.type}>
         <PersonHeader person={person} />
-        <div className="currentStatus">
+        <div className="currentStatusMessage">
           <header>
             <p>current status message:</p>
-            <div className="statusMessage">
-              <p>{currentStatus.statusMessage}</p>
-              <small>at:
-                <span>{currentStatus.statusLocation}</span>
-                <span>{currentStatus.statusDate}</span>
-                </small>
-            </div>
+            <small>at:
+              <span>{currentStatus.statusLocation}</span>
+              <span>{currentStatus.statusDate}</span>
+            </small>
           </header>
+          <div className="statusMessage">
+            <p>{currentStatus.statusMessage}</p>
+          </div>
         </div>
-
         <div className="Person-affiliation">
         <span>Affiliation:</span> <span itemProp="affiliation">{person.affiliation}</span>
         </div>
-
-        <footer className="longTermStatus">
-          <p className="Person-telephone" itemProp="telephone">{longTermStatus.telephone}</p>
-          <p itemProp="url">
-            <a href="{longTermStatus.url}">
-             {longTermStatus.url}
-            </a>
-          </p>
-          <div className="Person-postalAddress" itemScope itemType="{postalAddress.type}">
-            <p itemProp="streetAddress">{postalAddress.streetAddress}</p>
-            <span itemProp="addressRegion">{postalAddress.addressRegion}</span>,
-            <span itemProp="postalCode">{postalAddress.postalCode}</span>,
-            <span itemProp="addressLocality">{postalAddress.addressLocality}</span>
-          </div>
-        </footer>
+        <PersonFooter person={person} />
       </div>
     );
   }

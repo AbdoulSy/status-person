@@ -1,12 +1,8 @@
 import React, { Component } from 'react';
 
 class PersonHeader extends Component {
-  constructor (props) {
-    super(props);
-  }
-
   render() {
-    let { person, basic, avatar } = this.props.person;
+    let { basic, avatar } = this.props.person;
 
     return (
       <header className="Person-header">

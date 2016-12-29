@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PersonHeader from './PersonHeader';
+import PersonFooter from './PersonHeader';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
