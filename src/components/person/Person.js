@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import avatar from './data/images/abdoulsy.jpg';
-import abdoulsy from './data/abdoulsy.json';
 import PersonHeader from './personHeader/person-header';
 import PersonFooter from './personFooter/person-footer';
 import PersonCurrentStatusMessage
@@ -8,21 +6,9 @@ import PersonCurrentStatusMessage
 import './Person.css';
 
 class Person extends Component {
-  constructor (props) {
-    super(props);
-    this.state = {
-      person: {}
-    };
-  }
-
-  componentWillMount () {
-    //shouldn't mutate the imported data
-    abdoulsy.avatar.image = avatar;
-    this.setState({person: abdoulsy});
-  }
-
   render() {
-    let person = this.state.person;
+    let person = this.props.person;
+    person.avatar.image = this.props.avatar;
     return (
       <div className="Person" itemScope itemType={person.type}>
         <PersonHeader person={person} />
