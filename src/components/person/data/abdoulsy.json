@@ -1,0 +1,28 @@
+{
+  "type": "http://schema.org/Person",
+  "basic": {
+    "name": "Abdoul Sy",
+    "jobTitle": "Developer",
+    "email": "message@abdoulsy.eu"
+  },
+  "avatar": {
+    "image": ""
+  },
+  "currentStatus": {
+    "statusMessage": "Lying down, refactoring the component Person, updating the status message",
+    "statusLocation": "Lee @Malika's AirBnb",
+    "statusDate": "Thu 29/12 15:43 "
+  },
+  "affiliation": "Senforsce",
+  "longTermStatus": {
+    "telephone": "(+44) 07 810 763 236",
+    "url": "http://web.abdoulsy.eu"
+  },
+  "postalAddress": {
+    "type": "http://schema.org/PostalAddress",
+    "streetAddress": "7 Burgess Park Mansions, Fortune Green Road.",
+    "postalCode": "NW61DP",
+    "addressRegion": "Camden",
+    "addressLocality": "London"
+  }
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import avatar from './data/images/abdoulsy.jpg';
+import abdoulsy from './data/abdoulsy.json';
 import PersonHeader from './personHeader/person-header';
 import PersonFooter from './personFooter/person-footer';
 import PersonCurrentStatusMessage
@@ -15,38 +16,9 @@ class Person extends Component {
   }
 
   componentWillMount () {
-    this.setState({
-      person: {
-        type: "http://schema.org/Person",
-        basic: {
-          name: "Abdoul Sy",
-          jobTitle: "Developer",
-          email: "message@abdoulsy.eu"
-        },
-        avatar: {
-          image: avatar
-        },
-        currentStatus: {
-          statusMessage: `Lying down, refactoring \n
-          the component Person, updating the status message`,
-          statusLocation: "Lee @Malika's AirBnb",
-          statusDate: "Thu 29/12 15:43 ",
-        },
-        affiliation: "Senforsce",
-        longTermStatus: {
-          telephone: "(+44) 07 810 763 236",
-          url: "http://web.abdoulsy.eu"
-        },
-        postalAddress: {
-          type: "http://schema.org/PostalAddress",
-          streetAddress: `7 Burgess Park Mansions,
-             Fortune Green Road. `,
-          postalCode: "NW61DP",
-          addressRegion: "Camden",
-          addressLocality: "London"
-        }
-      }
-    });
+    //shouldn't mutate the imported data
+    abdoulsy.avatar.image = avatar;
+    this.setState({person: abdoulsy});
   }
 
   render() {
