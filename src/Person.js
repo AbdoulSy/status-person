@@ -16,7 +16,7 @@ class Person extends Component {
     };
   }
 
-  componentDidMount () {
+  componentWillMount () {
     this.setState({
       person: {
         type: "http://schema.org/Person",
