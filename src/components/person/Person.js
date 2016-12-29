@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import avatar from './data/images/abdoulsy.jpg';
 import PersonHeader from './personHeader/person-header';
-import PersonFooter from './personFooter/person-footer'
+import PersonFooter from './personFooter/person-footer';
+import PersonCurrentStatusMessage
+  from './personCurrentStatusMessage/current-status-message';
 import './Person.css';
 
 class Person extends Component {
@@ -55,22 +57,10 @@ class Person extends Component {
 
   render() {
     let person = this.state.person;
-    let currentStatus = person.currentStatus;
     return (
       <div className="Person" itemScope itemType={person.type}>
         <PersonHeader person={person} />
-        <div className="currentStatusMessage">
-          <header>
-            <p>current status message:</p>
-            <small>at:
-              <span>{currentStatus.statusLocation}</span>
-              <span>{currentStatus.statusDate}</span>
-            </small>
-          </header>
-          <div className="statusMessage">
-            <p>{currentStatus.statusMessage}</p>
-          </div>
-        </div>
+        <PersonCurrentStatusMessage person={person} />
         <div className="Person-affiliation">
         <span>Affiliation:</span> <span itemProp="affiliation">{person.affiliation}</span>
         </div>
