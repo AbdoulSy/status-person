@@ -10,13 +10,7 @@ class Person extends Component {
   constructor (props) {
     super(props);
     this.state = {
-      person: {
-        basic: {},
-        avatar: {},
-        currentStatus: {},
-        longTermStatus: {},
-        postalAddress: {}
-      }
+      person: {}
     };
   }
 
