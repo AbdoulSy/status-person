@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Person from './components/person/Person';
-import someone from './data/moussasy.json';
+import someone from './data/abdoulsy.json';
 import avatar from './data/images/abdoulsy.jpg';
 import Visualisation from './components/visualisation/visualisation';
 import './index.css';
