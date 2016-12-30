@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
+    "babel-preset-stage-0": "6.16.0",
     "flow-bin": "0.37.4",
-    "react-scripts": "0.8.4",
-    "@kadira/storybook": "^2.21.0"
+    "react-scripts": "0.8.4"
   },
   "dependencies": {
     "axios": "0.15.3",

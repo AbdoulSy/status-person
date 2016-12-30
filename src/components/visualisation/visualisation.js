@@ -24,7 +24,7 @@ class Visualisation extends Component {
 
   componentWillUnmount () {
     var el = ReactDOM.findDOMNode(this);
-    d3Visualisation.destroy(el);
+    d3Visualisation._destroy(el);
   }
 
   render () {
