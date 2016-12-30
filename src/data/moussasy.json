@@ -1,0 +1,29 @@
+{
+  "id": "http://web.abdoulsy.eu/o#Moussa",
+  "type": "http://schema.org/Person",
+  "basic": {
+    "name": "Moussa Sy",
+    "jobTitle": "Photographer",
+    "email": "me@moussasyphotography.com"
+  },
+  "avatar": {
+    "image": ""
+  },
+  "currentStatus": {
+    "statusMessage": "En train de prendre de superbes photos de mannequins pour AXIOS",
+    "statusLocation": "Chirac Studios @Paris",
+    "statusDate": "Thu 30/12 21:00 "
+  },
+  "affiliation": "Moussa Sy Photography",
+  "longTermStatus": {
+    "telephone": "(+33) 06 20 30 40 50",
+    "url": "http://moussa-sy-photography.wix.com"
+  },
+  "postalAddress": {
+    "type": "http://schema.org/PostalAddress",
+    "streetAddress": "9 Bis Rue des Prairies",
+    "postalCode": "75020",
+    "addressRegion": "Ile De France",
+    "addressLocality": "Paris"
+  }
+}

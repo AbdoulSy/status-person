@@ -1,0 +1,29 @@
+{
+  "id": "http://web.abdoulsy.eu/o#Baptiste",
+  "type": "http://schema.org/Person",
+  "basic": {
+    "name": "Baptiste Decaix",
+    "jobTitle": "Metreur",
+    "email": "baptiste@decaix.com"
+  },
+  "avatar": {
+    "image": ""
+  },
+  "currentStatus": {
+    "statusMessage": "Se Repose avant une bonne soirée du Nouvel An",
+    "statusLocation": "Chez Moi @Baptiste",
+    "statusDate": "Thu 30/12 21:30 "
+  },
+  "affiliation": "FBGP",
+  "longTermStatus": {
+    "telephone": "(+33) 06 24 88 46 50",
+    "url": "http://baptiste.fbgp.com"
+  },
+  "postalAddress": {
+    "type": "http://schema.org/PostalAddress",
+    "streetAddress": "11 bis rue Antony",
+    "postalCode": "92400",
+    "addressRegion": "Ile De France",
+    "addressLocality": "Clichy"
+  }
+}

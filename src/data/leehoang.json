@@ -1,0 +1,29 @@
+{
+  "id": "http://web.abdoulsy.eu/o#Lee",
+  "type": "http://schema.org/Person",
+  "basic": {
+    "name": "Lee Hoang",
+    "jobTitle": "Lead UX Web Designer",
+    "email": "lee.hoang@smartlogic.com"
+  },
+  "avatar": {
+    "image": ""
+  },
+  "currentStatus": {
+    "statusMessage": "Having a perfect meal with my wife and child after a tiresome day",
+    "statusLocation": "Welling @London",
+    "statusDate": "Thu 30/12 21:10 "
+  },
+  "affiliation": "Smartlogic",
+  "longTermStatus": {
+    "telephone": "(+44) 07 123 720 480",
+    "url": "http://leehoang.com"
+  },
+  "postalAddress": {
+    "type": "http://schema.org/PostalAddress",
+    "streetAddress": "7 Oxford Street",
+    "postalCode": "SAX 13D",
+    "addressRegion": "Welling",
+    "addressLocality": "London"
+  }
+}

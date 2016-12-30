@@ -1,0 +1,29 @@
+{
+  "id": "http://web.abdoulsy.eu/o#Arthy",
+  "type": "http://schema.org/Person",
+  "basic": {
+    "name": "Arthy Tharnaratnam",
+    "jobTitle": "Pilot, on-Board Train Seller",
+    "email": "arthy@sncf.com"
+  },
+  "avatar": {
+    "image": ""
+  },
+  "currentStatus": {
+    "statusMessage": "En train de preparer une soirée carnage du futur",
+    "statusLocation": "@Baptiste",
+    "statusDate": "Thu 30/12 21:30 "
+  },
+  "affiliation": "SNCF, senforsce",
+  "longTermStatus": {
+    "telephone": "(+33) 06 20 32 46 50",
+    "url": "http://arthy.sncf.com"
+  },
+  "postalAddress": {
+    "type": "http://schema.org/PostalAddress",
+    "streetAddress": "42 bis rue Lisfranc",
+    "postalCode": "93300",
+    "addressRegion": "Ile De France",
+    "addressLocality": "Aubervillers"
+  }
+}

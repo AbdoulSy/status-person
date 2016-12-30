@@ -1,0 +1,29 @@
+{
+  "id": "http://web.abdoulsy.eu/o#Ismael",
+  "type": "http://schema.org/Person",
+  "basic": {
+    "name": "Ismael Sy",
+    "jobTitle": "Entrepreneur",
+    "email": "ismaelsy75020@gmail.com"
+  },
+  "avatar": {
+    "image": ""
+  },
+  "currentStatus": {
+    "statusMessage": "En train de preparer le nouvel an d'Amy, en train de chercher Malick",
+    "statusLocation": "8-6 @Saint-Blaise",
+    "statusDate": "Thu 30/12 21:00 "
+  },
+  "affiliation": "Famille Sy Restaurants, Pyrogz Tourisme",
+  "longTermStatus": {
+    "telephone": "(+33) 06 21 31 41 50",
+    "url": "http://ismael-sy.com"
+  },
+  "postalAddress": {
+    "type": "http://schema.org/PostalAddress",
+    "streetAddress": "9 Bis Rue des Prairies",
+    "postalCode": "75020",
+    "addressRegion": "Ile De France",
+    "addressLocality": "Paris"
+  }
+}

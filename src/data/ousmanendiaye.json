@@ -1,0 +1,29 @@
+{
+  "id": "http://web.abdoulsy.eu/o#Ozzy",
+  "type": "http://schema.org/Person",
+  "basic": {
+    "name": "Ousmane Ndiaye",
+    "jobTitle": "Platform Engineer",
+    "email": "hey@ozzy.london"
+  },
+  "avatar": {
+    "image": ""
+  },
+  "currentStatus": {
+    "statusMessage": "Preparing for the new year with Alice",
+    "statusLocation": "Kitchen @Alice's",
+    "statusDate": "Thu 30/12 20:42 "
+  },
+  "affiliation": "Moo, Senforsce",
+  "longTermStatus": {
+    "telephone": "(+44) 07 123 405 060",
+    "url": "http://ozzy.london"
+  },
+  "postalAddress": {
+    "type": "http://schema.org/PostalAddress",
+    "streetAddress": "7 Burgess Park Mansions, Fortune Green Road.",
+    "postalCode": "NW61DP",
+    "addressRegion": "Camden",
+    "addressLocality": "London"
+  }
+}

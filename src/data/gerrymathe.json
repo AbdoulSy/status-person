@@ -1,0 +1,29 @@
+{
+  "id": "http://web.abdoulsy.eu/o#Gerry",
+  "type": "http://schema.org/Person",
+  "basic": {
+    "name": "Geraud Mathe",
+    "jobTitle": "Chairman",
+    "email": "gerry@gerry.com"
+  },
+  "avatar": {
+    "image": ""
+  },
+  "currentStatus": {
+    "statusMessage": "Preparing a trip with Erica for the new year",
+    "statusLocation": "Living Room @home",
+    "statusDate": "Thu 30/12 20:53 "
+  },
+  "affiliation": "General Assembly",
+  "longTermStatus": {
+    "telephone": "(+44) 07 123 098 236",
+    "url": "http://gerry.ga.eu"
+  },
+  "postalAddress": {
+    "type": "http://schema.org/PostalAddress",
+    "streetAddress": "7 Burgess Park Mansions, Fortune Green Road.",
+    "postalCode": "NW61DP",
+    "addressRegion": "Camden",
+    "addressLocality": "London"
+  }
+}
